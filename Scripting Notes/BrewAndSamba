@@ -1,0 +1,497 @@
+Last login: Fri Mar 11 10:17:25 on ttys000
+ASCI-Blue-5:~ ASCI-Blue$ net use
+-bash: net: command not found
+ASCI-Blue-5:~ ASCI-Blue$ rpcclient
+-bash: rpcclient: command not found
+ASCI-Blue-5:~ ASCI-Blue$ net use
+-bash: net: command not found
+ASCI-Blue-5:~ ASCI-Blue$ enum
+-bash: enum: command not found
+ASCI-Blue-5:~ ASCI-Blue$ netbios
+-bash: netbios: command not found
+ASCI-Blue-5:~ ASCI-Blue$ net
+-bash: net: command not found
+ASCI-Blue-5:~ ASCI-Blue$ session
+-bash: session: command not found
+ASCI-Blue-5:~ ASCI-Blue$ ssh
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-L [bind_address:]port:host:hostport] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port]
+           [-Q cipher | cipher-auth | mac | kex | key]
+           [-R [bind_address:]port:host:hostport] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+ASCI-Blue-5:~ ASCI-Blue$ smbtree
+-bash: smbtree: command not found
+ASCI-Blue-5:~ ASCI-Blue$ sudo apt-get install samba
+Password:
+sudo: apt-get: command not found
+ASCI-Blue-5:~ ASCI-Blue$ sudo yum install samba
+sudo: yum: command not found
+ASCI-Blue-5:~ ASCI-Blue$ yum install
+-bash: yum: command not found
+ASCI-Blue-5:~ ASCI-Blue$ who
+ASCI-Blue console  Mar 11 08:24 
+ASCI-Blue ttys003  Mar 11 12:53 
+ASCI-Blue-5:~ ASCI-Blue$ w
+13:10  up  4:46, 2 users, load averages: 2.34 2.29 2.35
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue console  -                 8:24    4:45 -
+ASCI-Blue s003     -                12:53       - w
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ w
+13:10  up  4:46, 2 users, load averages: 2.34 2.29 2.35
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue console  -                 8:24    4:45 -
+ASCI-Blue s003     -                12:53       - w
+ASCI-Blue-5:~ ASCI-Blue$ uptime
+13:10  up  4:46, 2 users, load averages: 2.59 2.35 2.37
+ASCI-Blue-5:~ ASCI-Blue$ nslookup
+> flyer
+Server:		10.10.90.50
+Address:	10.10.90.50#53
+
+** server can't find flyer: NXDOMAIN
+> 
+> 
+> 
+> ^C
+ASCI-Blue-5:~ ASCI-Blue$ w use
+13:12  up  4:48, 2 users, load averages: 2.21 2.32 2.36
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ w 192.168.142.143
+13:12  up  4:48, 2 users, load averages: 2.19 2.31 2.35
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ who me
+who: Cannot set utmpx file to `me'
+who: Cannot stat `me': No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ w me
+13:12  up  4:48, 2 users, load averages: 2.14 2.30 2.35
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ w 192.168.142.143
+13:12  up  4:48, 2 users, load averages: 1.97 2.25 2.33
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ 192.168.142.143
+-bash: 192.168.142.143: command not found
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ w 192.168.142.143
+13:13  up  4:49, 2 users, load averages: 1.89 2.23 2.32
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ netstat
+Active Internet connections
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+tcp4       0      0  10.250.100.62.52757    66.6.43.30.https       ESTABLISHED
+tcp4       0      0  10.250.100.62.52756    pa-in-f139.1e100.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52754    lax17s04-in-f14..https ESTABLISHED
+tcp4       0      0  10.250.100.62.52753    lax17s04-in-f14..https ESTABLISHED
+tcp4       0      0  10.250.100.62.52752    nuq04s29-in-f2.1.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52751    a23-73-182-213.d.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52750    a23-73-182-213.d.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52749    a23-73-182-213.d.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52748    a23-73-182-213.d.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52747    pa-in-f155.1e100.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52746    pa-in-f138.1e100.http  ESTABLISHED
+tcp4       0      0  10.250.100.62.52745    nuq04s29-in-f2.1.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52734    wiki-ubuntu-com..https LAST_ACK   
+tcp4       0      0  10.250.100.62.52733    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52732    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52731    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52730    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52729    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52728    feijoa.canonical.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52722    a23-73-215-58.de.https ESTABLISHED
+tcp4       0      0  10.250.100.62.52709    ec2-54-235-184-1.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52708    ec2-54-235-184-1.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52704    a198-189-255-200.http  ESTABLISHED
+tcp4       0      0  10.250.100.62.52667    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52666    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52665    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52664    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52657    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52656    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52655    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52654    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52653    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52652    a23-73-217-197.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52651    a23-73-187-159.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52650    a23-73-187-159.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52649    a23-73-187-159.d.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52648    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52647    a23-73-211-23.de.https CLOSE_WAIT 
+tcp4       0      0  10.250.100.62.52645    appleglobal.102..https ESTABLISHED
+tcp4       0      0  10.250.100.62.52643    *.112.2o7.net.https    ESTABLISHED
+tcp4       0      0  10.250.100.62.52641    nuq04s29-in-f2.1.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52640    nuq04s29-in-f2.1.http  LAST_ACK   
+tcp4       0      0  10.250.100.62.52236    a23-73-203-120.d.https LAST_ACK   
+tcp4       0      0  10.250.100.62.52079    pa-in-f102.1e100.https ESTABLISHED
+tcp4  426792      0  10.250.100.62.50283    server-205-251-2.https ESTABLISHED
+tcp4       0      0  10.250.100.62.64485    17.143.162.33.5223     ESTABLISHED
+tcp4       0      0  10.250.100.62.50956    pb-in-f188.1e100.5228  ESTABLISHED
+tcp4       0      0  10.250.100.62.50943    17.172.238.201.5223    ESTABLISHED
+^C
+ASCI-Blue-5:~ ASCI-Blue$ w 10.250.100.62.
+13:13  up  4:49, 2 users, load averages: 1.96 2.21 2.31
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+ASCI-Blue-5:~ ASCI-Blue$ mount
+/dev/disk1 on / (hfs, local, journaled)
+devfs on /dev (devfs, local, nobrowse)
+map -hosts on /net (autofs, nosuid, automounted, nobrowse)
+map auto_home on /home (autofs, automounted, nobrowse)
+/dev/disk3s1 on /Volumes/nmap-7.01 (hfs, local, nodev, nosuid, read-only, noowners, quarantine, mounted by ASCI-Blue)
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 10.250.100.62.
+-bash: 10.250.100.62.: command not found
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ mount 10.250.100.62.
+mount: 10.250.100.62.: unknown special file or file system.
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ homebrew
+-bash: homebrew: command not found
+ASCI-Blue-5:~ ASCI-Blue$ brew
+
+Example usage:
+  brew [info | home | options ] [FORMULA...]
+  brew install FORMULA...
+  brew uninstall FORMULA...
+  brew search [foo]
+  brew list [FORMULA...]
+  brew update
+  brew upgrade [FORMULA...]
+  brew pin/unpin [FORMULA...]
+
+Troubleshooting:
+  brew doctor
+  brew install -vd FORMULA
+  brew [--env | config]
+
+Brewing:
+  brew create [URL [--no-fetch]]
+  brew edit [FORMULA...]
+  https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md
+
+Further help:
+  man brew
+  brew home
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ brew install samba
+==> Downloading https://homebrew.bintray.com/bottles/samba-3.6.25.el_capitan.bot
+######################################################################## 100.0%
+==> Pouring samba-3.6.25.el_capitan.bottle.1.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/man/man8/eventlogadm.8
+/usr/local/share/man/man8 is not writable.
+
+You can try again using:
+  brew link samba
+==> Caveats
+To have launchd start samba at login:
+  ln -sfv /usr/local/opt/samba/*.plist ~/Library/LaunchAgents
+Then to load samba now:
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.samba.plist
+Or, if you don't want/need launchctl, you can just run:
+  smbd
+==> Summary
+🍺  /usr/local/Cellar/samba/3.6.25: 538 files, 100M
+ASCI-Blue-5:~ ASCI-Blue$ samba
+-bash: samba: command not found
+ASCI-Blue-5:~ ASCI-Blue$ smba
+-bash: smba: command not found
+ASCI-Blue-5:~ ASCI-Blue$ smba
+-bash: smba: command not found
+ASCI-Blue-5:~ ASCI-Blue$ brew install samba
+Warning: samba-3.6.25 already installed, it's just not linked
+ASCI-Blue-5:~ ASCI-Blue$ smba
+-bash: smba: command not found
+ASCI-Blue-5:~ ASCI-Blue$ brew link samba
+Linking /usr/local/Cellar/samba/3.6.25... 
+Error: Could not symlink share/man/man8/eventlogadm.8
+/usr/local/share/man/man8 is not writable.
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/lib/pkgconfig
+chmod: /usr/local/lib/pkgconfig: No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ brew link samba
+Linking /usr/local/Cellar/samba/3.6.25... 
+Error: Could not symlink share/man/man8/eventlogadm.8
+/usr/local/share/man/man8 is not writable.
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ brew link samba
+Linking /usr/local/Cellar/samba/3.6.25... 
+Error: Could not symlink share/man/man8/eventlogadm.8
+/usr/local/share/man/man8 is not writable.
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ chmod 755 /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ brew link samba
+Linking /usr/local/Cellar/samba/3.6.25... 
+Error: Could not symlink share/man/man8/eventlogadm.8
+/usr/local/share/man/man8 is not writable.
+ASCI-Blue-5:~ ASCI-Blue$ brew update
+
+
+^CError: Interrupted system call - git
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: Some directories in /usr/local/share/man aren't writable.
+This can happen if you "sudo make install" software that isn't managed
+by Homebrew. If a brew tries to add locale information to one of these
+directories, then the install will fail during the link step.
+
+You should probably `sudo chown -R $(whoami)` them:
+    /usr/local/share/man/de
+    /usr/local/share/man/de/man1
+    /usr/local/share/man/es
+    /usr/local/share/man/es/man1
+    /usr/local/share/man/fr
+    /usr/local/share/man/fr/man1
+    /usr/local/share/man/hr
+    /usr/local/share/man/hr/man1
+    /usr/local/share/man/hu
+    /usr/local/share/man/hu/man1
+    /usr/local/share/man/it
+    /usr/local/share/man/it/man1
+    /usr/local/share/man/ja
+    /usr/local/share/man/ja/man1
+    /usr/local/share/man/man8
+    /usr/local/share/man/pl
+    /usr/local/share/man/pl/man1
+    /usr/local/share/man/pt_BR
+    /usr/local/share/man/pt_BR/man1
+    /usr/local/share/man/pt_PT
+    /usr/local/share/man/pt_PT/man1
+    /usr/local/share/man/ro
+    /usr/local/share/man/ro/man1
+    /usr/local/share/man/ru
+    /usr/local/share/man/ru/man1
+    /usr/local/share/man/sk
+    /usr/local/share/man/sk/man1
+    /usr/local/share/man/zh
+    /usr/local/share/man/zh/man1
+
+Warning: "config" scripts exist outside your system or Homebrew directories.
+`./configure` scripts often look for *-config scripts to determine if
+software packages are installed, and what additional flags to use when
+compiling and linking.
+
+Having additional scripts in your path can confuse software installed via
+Homebrew if the config script overrides a system or Homebrew provided
+script of the same name. We found the following "config" scripts:
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python-config
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python2-config
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+
+Warning: Your XQuartz (2.7.7) is outdated
+Please install XQuartz 2.7.8:
+  https://xquartz.macosforge.org
+
+Warning: Python is installed at /Library/Frameworks/Python.framework
+
+Homebrew only supports building against the System-provided Python or a
+brewed Python. In particular, Pythons installed to /Library can interfere
+with other software installs.
+
+Warning: You have unlinked kegs in your Cellar
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on
+those kegs to fail to run properly once built. Run `brew link` on these:
+    samba
+
+Warning: Broken symlinks were found. Remove them with `brew prune`:
+    /usr/local/bin/prl_convert
+    /usr/local/bin/prl_disk_tool
+    /usr/local/bin/prl_perf_ctl
+    /usr/local/bin/prlcore2dmp
+    /usr/local/bin/prlctl
+    /usr/local/bin/prlexec
+    /usr/local/bin/prlsrvctl
+    /usr/local/etc/bash_completion.d/prlctl
+    /usr/local/etc/bash_completion.d/prlsrvctl
+    /usr/local/share/man/man8/prl_convert.8
+    /usr/local/share/man/man8/prl_disk_tool.8
+    /usr/local/share/man/man8/prlctl.8
+    /usr/local/share/man/man8/prlsrvctl.8
+ASCI-Blue-5:~ ASCI-Blue$ brew prune
+Error: Permission denied - /usr/local/share/man/man8/prl_convert.8
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R `whoami` /usr/local/lib/pkgconfig
+Password:
+chown: /usr/local/lib/pkgconfig: No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R `whoami` /usr/local/share/man/man8/prl_convert.8
+ASCI-Blue-5:~ ASCI-Blue$ brew prune
+Error: Permission denied - /usr/local/share/man/man8/prl_convert.8
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R whoami /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8
+chown: whoami: illegal user name
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R 'whoami' /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8
+Password:
+chown: whoami: illegal user name
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R ASCI-Blue' /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8
+> 
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R 'ASCI-Blue' /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8
+chown: /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8: No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R 'ASCI-Blue' /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8
+chown: /usr/local/share/man/man3/usr/local/share/man/man8/prl_convert.8: No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ brew prune
+Error: Permission denied - /usr/local/share/man/man8/prl_convert.8
+ASCI-Blue-5:~ ASCI-Blue$ find /usr/local/share/man/man8/prl_convert.8
+/usr/local/share/man/man8/prl_convert.8
+ASCI-Blue-5:~ ASCI-Blue$ rmdir /usr/local/share/man/man8/prl_convert.8
+rmdir: /usr/local/share/man/man8/prl_convert.8: Not a directory
+ASCI-Blue-5:~ ASCI-Blue$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: Some directories in /usr/local/share/man aren't writable.
+This can happen if you "sudo make install" software that isn't managed
+by Homebrew. If a brew tries to add locale information to one of these
+directories, then the install will fail during the link step.
+
+You should probably `sudo chown -R $(whoami)` them:
+    /usr/local/share/man/de
+    /usr/local/share/man/de/man1
+    /usr/local/share/man/es
+    /usr/local/share/man/es/man1
+    /usr/local/share/man/fr
+    /usr/local/share/man/fr/man1
+    /usr/local/share/man/hr
+    /usr/local/share/man/hr/man1
+    /usr/local/share/man/hu
+    /usr/local/share/man/hu/man1
+    /usr/local/share/man/it
+    /usr/local/share/man/it/man1
+    /usr/local/share/man/ja
+    /usr/local/share/man/ja/man1
+    /usr/local/share/man/man8
+    /usr/local/share/man/pl
+    /usr/local/share/man/pl/man1
+    /usr/local/share/man/pt_BR
+    /usr/local/share/man/pt_BR/man1
+    /usr/local/share/man/pt_PT
+    /usr/local/share/man/pt_PT/man1
+    /usr/local/share/man/ro
+    /usr/local/share/man/ro/man1
+    /usr/local/share/man/ru
+    /usr/local/share/man/ru/man1
+    /usr/local/share/man/sk
+    /usr/local/share/man/sk/man1
+    /usr/local/share/man/zh
+    /usr/local/share/man/zh/man1
+
+Warning: "config" scripts exist outside your system or Homebrew directories.
+`./configure` scripts often look for *-config scripts to determine if
+software packages are installed, and what additional flags to use when
+compiling and linking.
+
+Having additional scripts in your path can confuse software installed via
+Homebrew if the config script overrides a system or Homebrew provided
+script of the same name. We found the following "config" scripts:
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python-config
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python2-config
+    /Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+
+Warning: Your XQuartz (2.7.7) is outdated
+Please install XQuartz 2.7.8:
+  https://xquartz.macosforge.org
+
+Warning: Python is installed at /Library/Frameworks/Python.framework
+
+Homebrew only supports building against the System-provided Python or a
+brewed Python. In particular, Pythons installed to /Library can interfere
+with other software installs.
+
+Warning: You have unlinked kegs in your Cellar
+Leaving kegs unlinked can lead to build-trouble and cause brews that depend on
+those kegs to fail to run properly once built. Run `brew link` on these:
+    samba
+
+Warning: Broken symlinks were found. Remove them with `brew prune`:
+    /usr/local/share/man/man8/prl_convert.8
+    /usr/local/share/man/man8/prl_disk_tool.8
+    /usr/local/share/man/man8/prlctl.8
+    /usr/local/share/man/man8/prlsrvctl.8
+ASCI-Blue-5:~ ASCI-Blue$ update
+-bash: update: command not found
+ASCI-Blue-5:~ ASCI-Blue$ xquartz update
+ASCI-Blue-5:~ ASCI-Blue$ `sudo chown -R $(whoami)` /usr/local/share/man/zh/man1
+usage: chown [-fhv] [-R [-H | -L | -P]] owner[:group] file ...
+       chown [-fhv] [-R [-H | -L | -P]] :group file ...
+-bash: /usr/local/share/man/zh/man1: is a directory
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami) /usr/local/share/man/zh/man1
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami) /usr/local/share/man/zh/man1
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R 'ASCI-Blue' /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami) /usr/local/share/man/zh/man1/usr/local/share/man/man8
+chown: /usr/local/share/man/zh/man1/usr/local/share/man/man8: No such file or directory
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami)/usr /usr/local/share/man/man8
+chown: ASCI-Blue/usr: illegal user name
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami)/usr /usr/local/share/man/man8
+chown: ASCI-Blue/usr: illegal user name
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ sudo chown -R $(whoami) /usr/local/share/man/man8
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ brew link samba
+Linking /usr/local/Cellar/samba/3.6.25... 163 symlinks created
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ 
+ASCI-Blue-5:~ ASCI-Blue$ samba
+-bash: samba: command not found
+ASCI-Blue-5:~ ASCI-Blue$ 
