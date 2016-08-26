@@ -1,6 +1,9 @@
 
 
 
+ipconfig getifaddr en0 | xargs nmap --script=smb-check-vulns -p445
+
+read userinput
 @echo off
 echo
 tput bel
