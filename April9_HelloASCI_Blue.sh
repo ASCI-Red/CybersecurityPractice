@@ -1,6 +1,10 @@
+read menuChoice
+if  [ $menuChoice="\n" ]; then
+echo "HELLLOOOOO"
+echo -e "\t Invalid Response. Enter '0' to exit out of menu"
+fi
 
-
-
+read
 ipconfig getifaddr en0 | xargs nmap --script=smb-check-vulns -p445
 
 read userinput

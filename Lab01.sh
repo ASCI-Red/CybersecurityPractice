@@ -245,7 +245,6 @@ read userInput
 echo -e "\t \t 3. smb-vuln-ms06-025"
 
 
-
 read userInput
 echo -e "\t \t 4. smb-vuln-ms07-029"
 
@@ -261,190 +260,168 @@ echo
 sleep .4
 
 
-strArray_continu="Type 1, 2, 3, 4, 5, 6 and press [ENTER] to select a script to run, or \" 0 \" "
-for n in $strArray_continu; do
-    echo -n "$n"" "
+read userInput
+sleep .4
+clear
+sleep .8
+strArray=" \n \n \t Scanning for Conficker Worm smb-vuln-conficker"
+for n in $strArray; do
+echo -n -e "$n"" "
+sleep .05
+done
+echo
+
+clear
+echo
+echo
+sleep .8
+strArray="\t smb-vuln-conficker \n \t \" Conficker, also known as Downup, Downadup and Kido, is a computer worm targeting the Microsoft Windows operating system that was first detected in November 2008.[1] It uses flaws in Windows OS software and dictionary attacks on administrator passwords to propagate while forming a botnet, and has been unusually difficult to counter because of its combined use of many advanced malware techniques.[2][3] The Conficker worm infected millions of computers including government, business and home computers in over 190 countries, making it the largest known computer worm infection since the 2003 Welchia.[4]\" \n"
+
+for n in $strArray; do
+    echo -n -e "$n"" "
     sleep .06
 done
-echo
-read menuChoice
-echo
-echo $menuChoice
+echo -e " \n \t nmap --script=smb-vuln-conficker $IPAddress \n"
 
-while [ $menuChoice -ne "0" ]; do
-
-
-
-
-if [ $menuChoice -eq 1 ]; then
-    sleep .5
-    clear
-    echo
-    echo
-    sleep .8
-    strArray="\t smb-vuln-conficker \n \t \" Conficker, also known as Downup, Downadup and Kido, is a computer worm targeting the Microsoft Windows operating system that was first detected in November 2008.[1] It uses flaws in Windows OS software and dictionary attacks on administrator passwords to propagate while forming a botnet, and has been unusually difficult to counter because of its combined use of many advanced malware techniques.[2][3] The Conficker worm infected millions of computers including government, business and home computers in over 190 countries, making it the largest known computer worm infection since the 2003 Welchia.[4]\" \n"
-
-    for n in $strArray; do
-        echo -n -e "$n"" "
-        sleep .06
-    done
-    echo
-    echo -e " \t nmap --script=smb-vuln-conficker $IPAddress"
-    echo
-    sleep 1
-
-    nmap --script=smb-vuln-conficker $IPAddress
-
-fi
-
-
-if [ $menuChoice -eq 2 ]; then
-    sleep .5
-    clear
-    echo
-    echo
-    sleep .8
-    strArray="\t cve2009-3103 $IPAddress \n \t \" \t Detects Microsoft Windows systems vulnerable to denial of service (CVE-2009-3103). This script will crash the service if it is vulnerable.\n  \t The script performs a denial-of-service against the vulnerability disclosed in CVE-2009-3103. This works against Windows Vista and some versions of Windows 7, and causes a bluescreen if successful. The proof-of-concept code at http://seclists.org/fulldisclosure/2009/Sep/39 was used, with one small change. \n"
-
-    for n in $strArray; do
-        echo -n -e "$n"" "
-        sleep .06
-    done
-    echo
-    echo -e " \t nmap --script=smb-vuln-cve2009-3103 $IPAddress"
-    echo
-    sleep 1
-    nmap --script=smb-vuln-cve2009-3103 $IPAddress
-
-fi
-
-
-if [ $menuChoice -eq 3 ]; then
-sleep .5
-clear
-echo
-echo
-sleep .8
-strArray="\t smb-vuln-ms06-025 \n \t \" \t Vulnerability in Routing and Remote Access Could Allow Remote Code Execution (911280) \n"
-
-for n in $strArray; do
-echo -n -e "$n"" "
-sleep .06
-done
-echo
-echo -e " \t nmap --script=smb-vuln-ms06-025 $IPAddress"
-echo
 sleep 1
 
-nmap --script=smb-vuln-ms06-025 $IPAddress
+nmap --script=smb-vuln-conficker $IPAddress
+echo "Moving On: [ENTER]"
+read userinput
 
-fi
-
-if [ $menuChoice -eq 4 ]; then
+###########################################################################################################################
 sleep .5
 clear
-echo
-echo
 sleep .8
-strArray="\t smb-vuln-ms06-025 \n \t \" \t Vulnerability in Routing and Remote Access Could Allow Remote Code Execution (911280) \n"
+strArray=" \n\n \t cve2009-3103 $IPAddress \n \t \" \t Detects Microsoft Windows systems vulnerable to denial of service (CVE-2009-3103). This script will crash the service if it is vulnerable.\n  \t The script performs a denial-of-service against the vulnerability disclosed in CVE-2009-3103. This works against Windows Vista and some versions of Windows 7, and causes a bluescreen if successful. The proof-of-concept code at http://seclists.org/fulldisclosure/2009/Sep/39 was used, with one small change. \n"
+for n in $strArray; do
+    echo -n -e "$n"" "
+    sleep .06
+done
+echo -e "\n \t nmap --script=smb-vuln-cve2009-3103 $IPAddress \n"
+sleep 1
+nmap --script=smb-vuln-cve2009-3103 $IPAddress
+echo "Moving On: [ENTER]"
+read userinput
+###########################################################################################################################
+sleep .5
+clear
+sleep .8
+strArray="\n\n \t smb-vuln-ms06-025 \n \t \" \t Detects Microsoft Windows systems with Ras RPC service vulnerable to MS06-025.\n Targets the RasRpcSumbitRequest() RPC method which is a part of RASRPC interface that serves as a RPC service for configuring and getting information from the Remote Access and Routing service. RASRPC can be accessed using either router, SMB pipe or the SRVSVC SMB pipe (usually on Windows XP machines).\n"
 
 for n in $strArray; do
-echo -n -e "$n"" "
-sleep .06
+    echo -n -e "$n"" "
+    sleep .06
 done
-echo
-echo -e " \t nmap --script=smb-vuln-ms06-025 $IPAddress"
-echo
+echo -e " \n \t nmap --script=smb-vuln-ms06-025 $IPAddress\n"
+sleep 1
+nmap --script=smb-vuln-ms06-025 $IPAddress
+echo "Moving On: [ENTER]"
+read userinput
+########################################################################################################################
+
+sleep .5
+clear
+
+sleep .8
+strArray="\n\n\t smb-vuln-ms07-029\n \t \" \t Detects Microsoft Windows systems with Dns Server RPC vulnerable to MS07-029.MS07-029 targets the R_DnssrvQuery() and R_DnssrvQuery2() RPC method which isa part of DNS Server RPC interface that serves as a RPC service for configuring and getting information from the DNS Server service. DNS Server RPC service can be accessed using \dnsserver SMB named pipe. The vulnerability is triggered when a long string is send as the zone parameter which causes the buffer overflow which crashes the service.\n"
+
+for n in $strArray; do
+    echo -n -e "$n"" "
+    sleep .06
+done
+
+echo -e " \n\t nmap --script=smb-vuln-ms07-029 $IPAddress\n"
 sleep 1
 
 nmap --script=smb-vuln-ms07-029 $IPAddress
-fi
+echo "Moving On: [ENTER]"
+read userinput
+
+################################################################################################
+sleep .5
+clear
+sleep .8
+strArray="\n\n\t smb-vuln-regsvc-dos \n \t \" \t Checks if a Microsoft Windows 2000 system is vulnerable to a crash in regsvc caused by a null pointer dereference. This check will crash the service if it is vulnerable and requires a guest account or higher to work. \n The vulnerability was discovered by Ron Bowes while working on smb-enum-sessions and was reported to Microsoft (Case #MSRC8742). \n"
+for n in $strArray; do
+    cho -n -e "$n"" "
+    sleep .06
+done
+echo -e " \n\t nmap --script=smb-vuln-regsvc-dos $IPAddress\n"
+sleep 1
+nmap --script=smb-vuln-regsvc-dos $IPAddress
+echo"Moving On: [ENTER]"
+read userinput
+#######################################################################################################
+
+sleep .5
+clear
+sleep .8
+strArray="\n\n\t smb-vuln-ms08-067 \n \t \" \t Detects Microsoft Windows systems vulnerable to the remote code execution vulnerability known as MS08-067. This check is dangerous and it may crash systems. \n"
+
+for n in $strArray; do
+    echo -n -e "$n"" "
+    sleep .06
+done
+echo -e "\n \t nmap --script=smb-vuln-ms08-067 $IPAddress\n"
+sleep 1
+
+nmap --script=smb-vuln-ms08-067 $IPAddress
+echo "Moving On: [ENTER]"
+read userinput
+###################################################################################################################################
+
+sleep .8
+clear
+sleep .8
+let num=$RANDOM%100;
+((num=num+30))
+sleep .5
+echo  -n -e "\033[20;5;7mContinuing\033[0m"
+sleep .2
+while [ $num -gt 0 ]; do
+    echo -n -e "."
+    sleep .04
+    ((num=num-1))
+done
+
+strArray="Starting Nmap scan on ssh port (Port 22)"
+for n in $strArray; do
+    echo -n "$n"" "
+    sleep .06
+done
+
+nmap --script=ssh-hostkey --script-args=unsafe=1 -p22 $IPAddress
 
 
-read menuChoice
+echo -e "\n \t nmap --script=ssh-hostkey --script-args=unsafe=1 -p22 $IPAddress\n \n \t Note: Using the ssh-hostkey.nse vulnerability scan allows an attacker to grab three encrypted footprint keys. \n This is not a critical vulnerability, but it does allow someone to passively obtain the encryption keys without generating a log entry on the Unix system and allows for future exploitation or forging. No further security hardening is required on this machine. \n "
+sleep 1
+echo "Moving On: [ENTER]"
+read userinput
+#################################################################################
+sleep .5
+
+echo  -n -e "\033[20;5;7mContinuing\033[0m"
+let num=$RANDOM%100;
+((num=num+30))
+sleep .5
+
+
+while [ $num -gt 0 ]; do
+echo -n -e "."
+sleep .04
+((num=num-1))
 
 done
-#if [ $menuChoice -eq 4 ]; then
-#sleep .5
-#clear
-#sleep .8
-#strArray="\n\n \t smb-vuln-ms07-029 \n \t \" \t MS07-029 targets the R_DnssrvQuery() and R_DnssrvQuery2() RPC method which isa part of DNS Server RPC interface that serves as a RPC service for configuring and getting information from the DNS Server service. DNS Server RPC service can be accessed using dnsserver SMB named pipe. The vulnerability is triggered when a long string is send as the zone parameter which causes the buffer overflow which crashes the service. \n"
-#
-#for n in $strArray; do
-#echo -n -e "$n"" "
-#sleep .06
-#done
-#echo -e "\n \t nmap --script=smb-vuln-ms07-029 $IPAddress \n"
-#sleep 1
-#
-#nmap --script=smb-vuln-ms07-029 $IPAddress
-#fi
+
+clear
+strArray=" \n \tCouple of other things: \n "
+for n in $strArray; do
+echo -n "$n"" "
+sleep .06
+done
 
 
-
-#
-#echo
-#nmap -v --script=smb-vuln-conficker -p445 192.168.1.68
-#echo "nmap -v --script=smb-vuln-conficker -p445 $IPAddress"
-#
-#echo
-#echo
-#
-#nmap -v --script=smb-vuln-cve2009-3103 -p445 $IPAddress
-#echo "nmap -v --script=smb-vuln-cve2009-3103 -p445 $IPAddress"
-#
-#
-#echo
-#
-
-
-
-
-#
-#
-#if [ $menuChoice -eq 5 ]; then
-#sleep .5
-#clear
-#echo
-#echo
-#sleep .8
-#strArray="\t smb-vuln-regsvc-dos \n \t \" \t MS07-029 targets the R_DnssrvQuery() and R_DnssrvQuery2() RPC method which isa part of DNS Server RPC interface that serves as a RPC service for configuring and getting information from the DNS Server service. DNS Server RPC service can be accessed using dnsserver SMB named pipe. The vulnerability is triggered when a long string is send as the zone parameter which causes the buffer overflow which crashes the service. \n"
-#
-#for n in $strArray; do
-#echo -n -e "$n"" "
-#sleep .06
-#done
-#echo
-#echo -e " \t nmap --script=smb-vuln-regsvc-dos $IPAddress"
-#echo
-#sleep 1
-#
-#nmap --script=smb-vuln-regsvc-dos $IPAddress
-#
-#if [ $menuChoice -eq 6 ]; then
-#sleep .5
-#clear
-#sleep .8
-#strArray="\n\n\t smb-vuln-ms08-067 \n \t \" \t Detects Microsoft Windows systems vulnerable to the remote code execution vulnerability known as MS08-067. This check is dangerous and it may crash systems. \n"
-#for n in $strArray; do
-#echo -n -e "$n"" "
-#sleep .06
-#done
-#
-#echo
-#echo -e " \t nmap --script=smb-vuln-ms08-067 $IPAddress"
-#echo
-#sleep 1
-#
-#nmap --script=smb-vuln-ms08-067 $IPAddress
-#
-
-
-
-
-
-
-###########################################################################################################################
 strArray_Nmap_iR_Pn_p="Starting Nmap scan on port 80............"
 for n in $strArray_Nmap_iR_Pn_p; do
 echo -n "$n"" "
@@ -456,12 +433,10 @@ for n in $strArray_Nmap_iR_Pn_p; do
 echo -n "$n"" "
 sleep .06
 done
-##########################################
+
 nmap -v -iR 10 -Pn -p 80
 
 
-echo
-echo
 
 strArray_Nmap_iR_Pn_p="Press ENTER to continue after each statement"
 echo
